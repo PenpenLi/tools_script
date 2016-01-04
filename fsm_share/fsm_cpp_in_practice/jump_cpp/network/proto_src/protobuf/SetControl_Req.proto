@@ -1,0 +1,9 @@
+package protobuf;
+
+message SetControl_Req {
+	required string token = 1;		//TOKEN	
+	optional bool FriendsHeart = 2;	//好友送心
+	optional int32 Music = 3;		//音乐
+	optional int32 Sound = 4;		//音效
+	optional int32 Sensitivity = 5;		//灵敏度
+}

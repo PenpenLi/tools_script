@@ -1,0 +1,6 @@
+package protobuf;
+
+message RookieGuide_Ack {
+	optional string msgInfo = 1;
+	optional int32 acktime = 2;
+}

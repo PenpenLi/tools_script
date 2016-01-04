@@ -1,0 +1,5 @@
+package protobuf;
+
+message UpHeart_Req {
+	required string token = 1;
+}

@@ -1,0 +1,16 @@
+package protobuf;
+
+message RoleList_Ack {
+
+	message RoleList {
+		optional int32 roleType = 1;
+		optional int32 level = 2;
+		optional bool breakType = 3;//是否在能突破的时候未突破:true;false
+		optional bool isMax = 4;//是否满级:true;false
+	}
+	optional string msgInfo = 1;//消息
+	repeated RoleList roleList = 2;//角色列表
+	required int32 acktime = 3;
+
+}
+

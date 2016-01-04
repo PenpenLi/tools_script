@@ -1,0 +1,7 @@
+package protobuf;
+
+message RankList_Req {
+	required int32 rankType = 1;//1.好友 2.全服
+	required int32 scoreType = 2;//1.历史 2.本周
+	optional string token = 3;
+}

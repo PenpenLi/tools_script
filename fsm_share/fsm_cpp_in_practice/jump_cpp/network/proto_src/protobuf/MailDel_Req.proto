@@ -1,0 +1,6 @@
+package protobuf;
+
+message MailDel_Req {
+	required string token = 1;
+	required int32 mailId = 2;//邮件ID(为0全部删除)
+}

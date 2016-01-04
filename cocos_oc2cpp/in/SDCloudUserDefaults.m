@@ -1,0 +1,132 @@
+//
+//  SDCloudUserDefaults.m
+//
+//  Created by Stephen Darlington on 01/09/2011.
+//  Copyright (c) 2011 Wandle Software Limited. All rights reserved.
+//
+
+#import "SDCloudUserDefaults.h"
+
+@implementation SDCloudUserDefaults
+
+static id notificationObserver;
+
++(NSString*)stringForKey:(NSString*)aKey {
+    return [SDCloudUserDefaults objectForKey:aKey];
+}
+
++(BOOL)boolForKey:(NSString*)aKey {
+    return [[SDCloudUserDefaults objectForKey:aKey] boolValue];
+}
+
++(id)objectForKey:(NSString*)aKey {
+#ifdef ANDROID
+    return [[NSUserDefaults standardUserDefaults] objectForKey:aKey];
+#else
+    NSUbiquitousKeyValueStore* cloud = [NSUbiquitousKeyValueStore defaultStore];
+    id retv = [cloud objectForKey:aKey];
+    if (!retv) {
+        retv = [[NSUserDefaults standardUserDefaults] objectForKey:aKey];
+        [cloud setObject:retv forKey:aKey];
+    }
+    return retv;
+#endif
+}
+
++(NSInteger)integerForKey:(NSString*)aKey {
+    return [[SDCloudUserDefaults objectForKey:aKey] integerValue];
+}
+
++(float)floatForKey:(NSString*)aKey{
+    return [[SDCloudUserDefaults objectForKey:aKey] floatValue];
+}
+
++(void)setString:(NSString*)aString forKey:(NSString*)aKey {
+    [SDCloudUserDefaults setObject:aString forKey:aKey];
+}
+
++(void)setBool:(BOOL)aBool forKey:(NSString*)aKey {
+    [SDCloudUserDefaults setObject:[NSNumber numberWithBool:aBool] forKey:aKey];
+}
+
++(void)setObject:(id)anObject forKey:(NSString*)aKey {
+#ifdef ANDROID
+    [[NSUserDefaults standardUserDefaults] setObject:anObject forKey:aKey];
+#else
+    [[NSUserDefaults standardUserDefaults] setObject:anObject forKey:aKey];
+    [[NSUbiquitousKeyValueStore defaultStore] setObject:anObject forKey:aKey];
+#endif
+}
+
++(void)setInteger:(NSInteger)anInteger forKey:(NSString*)aKey {
+    [SDCloudUserDefaults setObject:[NSNumber numberWithInteger:anInteger]
+                            forKey:aKey];
+}
+
++(void)setFloat:(float)aFloat forKey:(NSString*)aKey{
+    [SDCloudUserDefaults setObject:[NSNumber numberWithFloat:aFloat]
+                            forKey:aKey];
+}
+
++(void)removeObjectForKey:(NSString*)aKey {
+#ifdef ANDROID
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:aKey];
+#else
+    [[NSUbiquitousKeyValueStore defaultStore] removeObjectForKey:aKey];
+    [[NSUserDefaults standardUserDefaults] removeObjectForKey:aKey];
+#endif
+}
+
++(void)synchronize {
+#ifdef ANDROID
+    [[NSUserDefaults standardUserDefaults] synchronize];
+#else
+    [[NSUbiquitousKeyValueStore defaultStore] synchronize];
+    [[NSUserDefaults standardUserDefaults] synchronize];
+#endif
+}
+
++(void)registerForNotifications {
+#ifdef ANDROID
+#else
+    @synchronized(notificationObserver) {
+        if (notificationObserver) {
+            return;
+        }
+
+        notificationObserver = [[NSNotificationCenter defaultCenter] addObserverForName:@"NSUbiquitousKeyValueStoreDidChangeExternallyNotification"
+                                                                                 object:[NSUbiquitousKeyValueStore defaultStore]
+                                                                                  queue:nil
+                                                                             usingBlock:^(NSNotification* notification) {
+                                                                                 
+                                                                                 NSDictionary* userInfo = [notification userInfo];
+                                                                                 NSNumber* reasonForChange = [userInfo objectForKey:NSUbiquitousKeyValueStoreChangeReasonKey];
+                                                                                 
+                                                                                 // If a reason could not be determined, do not update anything.
+                                                                                 if (!reasonForChange)
+                                                                                     return;
+                                                                                 
+                                                                                 // Update only for changes from the server.
+                                                                                 NSInteger reason = [reasonForChange integerValue];
+                                                                                 if ((reason == NSUbiquitousKeyValueStoreServerChange) ||
+                                                                                     (reason == NSUbiquitousKeyValueStoreInitialSyncChange)) {
+                                                                                     NSUserDefaults* defaults = [NSUserDefaults standardUserDefaults];
+                                                                                     NSUbiquitousKeyValueStore* cloud = [NSUbiquitousKeyValueStore defaultStore];
+                                                                                     NSArray* changedKeys = [userInfo objectForKey:NSUbiquitousKeyValueStoreChangedKeysKey];
+                                                                                     for (NSString* key in changedKeys) {
+                                                                                         [defaults setObject:[cloud objectForKey:key] forKey:key];
+                                                                                     }
+                                                                                 }
+                                                                             }];
+    }
+#endif
+}
+
++(void)removeNotifications {
+    @synchronized(notificationObserver) {
+        [[NSNotificationCenter defaultCenter] removeObserver:notificationObserver];
+        notificationObserver = nil;
+    }
+}
+
+@end

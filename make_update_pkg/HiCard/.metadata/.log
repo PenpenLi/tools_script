@@ -1,0 +1,40 @@
+!SESSION 2014-08-29 11:04:21.077 -----------------------------------------------
+eclipse.buildId=V1.0.0.RC1
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.ccdt.intro.product -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.ccdt.intro.product -data /Users/ywxx/Documents/chris/card_lua/code_proj/HiCard -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-29 11:04:27.003
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-08-29 11:05:04.116 -----------------------------------------------
+eclipse.buildId=V1.0.0.RC1
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-08-29 11:05:09.993
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-11-07 11:31:47.704 -----------------------------------------------
+eclipse.buildId=V1.0.0.RC1
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.ccdt.intro.product -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.ccdt.intro.product -data /Users/ywxx/Documents/chris/card_lua/code_proj/HiCard -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-07 11:31:53.648
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2014-11-07 11:32:28.357 -----------------------------------------------
+eclipse.buildId=V1.0.0.RC1
+java.version=1.6.0_65
+java.vendor=Apple Inc.
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=zh_CN
+Framework arguments:  -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.ccdt.intro.product -keyring /Users/ywxx/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2014-11-07 11:32:34.280
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences

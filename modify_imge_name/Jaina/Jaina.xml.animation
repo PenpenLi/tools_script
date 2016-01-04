@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<AnimationProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ProjectDir>F:\cocos2d-x-2.2.1\projects\card_lua\MyCocosUi\Jaina</ProjectDir>
+  <Version>1.6.0.0</Version>
+  <Resources>F:\cocos2d-x-2.2.1\projects\card_lua\MyCocosUi\Jaina\Resources</Resources>
+  <Name>Jaina</Name>
+  <JsonFileName>Jaina.json</JsonFileName>
+  <JsonFolder>F:\cocos2d-x-2.2.1\projects\card_lua\MyCocosUi\Jaina\Json</JsonFolder>
+  <JsonList />
+  <CanvasSize>
+    <Width>0</Width>
+    <Height>0</Height>
+  </CanvasSize>
+  <filePath>F:\cocos2d-x-2.2.1\projects\card_lua\MyCocosUi\Jaina\Jaina.xml.animation</filePath>
+  <ProjectType>AnimationProject</ProjectType>
+  <ResRelativePath />
+  <ResourceFileList>
+    <string>Jaina0.plist</string>
+  </ResourceFileList>
+  <bBatchImage>true</bBatchImage>
+</AnimationProject>

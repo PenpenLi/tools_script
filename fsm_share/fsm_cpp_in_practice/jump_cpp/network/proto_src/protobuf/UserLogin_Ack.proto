@@ -1,0 +1,32 @@
+package protobuf;
+
+message UserLogin_Ack {
+
+	optional string msgInfo = 1;//登陆消息
+	optional string username = 2;//用户名
+	optional string nickname = 3;//玩家名称
+	optional int32 level = 4;//等级
+	optional int32 star = 5;//体力值
+	optional int32 coin = 6;//金币
+	optional int32 diamond = 7;//钻石
+	optional int32 helpCount = 8;//剩余求助次数
+	optional int32 roleType = 9;//角色类型
+	optional int32 mailCount = 10;//未查看邮件数量
+	optional int32 weekScore = 11;//本周最高分
+	optional int32 score = 12;//历史最高分
+	optional int32 time = 13;//登陆时间戳
+	optional string content = 14;//活动内容
+	optional string imgPath = 15;//图片路径
+	optional int32 avtiveCount = 16;//未完成活跃数量
+	optional bool helpInc = 17;//好友送心
+	optional int32 bgmInc = 18;//背景音乐
+	optional int32 soundInc = 19;//背景音效
+	optional int32 sensitivityInc = 20;//灵敏度
+	optional int32 loginCount = 21;//连续登陆天数
+	optional int32 loginCountTotal = 22;//累计登陆天数
+	optional string token = 23;//效验码
+	optional int32 playerId = 24;//玩家ID
+	optional int32 stageId = 25;//当前关卡
+	optional int32 count = 26;//登陆次数
+	required int32 acktime = 27;
+}

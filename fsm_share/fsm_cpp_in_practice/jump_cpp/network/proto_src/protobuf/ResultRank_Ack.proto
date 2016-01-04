@@ -1,0 +1,13 @@
+package protobuf;
+
+message UpRankList {
+	optional string nickname = 1;//玩家名称
+	optional int32 roleType = 2;//角色ID
+	optional int32 score = 3;//分数
+}
+
+message ResultRank_Ack {
+	optional string msgInfo = 1;	//消息
+	repeated UpRankList upRankList = 2;//超过的玩家列表
+	required int32 acktime = 3;
+}

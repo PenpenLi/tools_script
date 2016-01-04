@@ -1,0 +1,16 @@
+package protobuf;
+
+message FriendHelpList_Ack {
+
+	message FriendList {
+		optional string nickname = 1;
+		optional int32 roleType = 2;
+		optional int32 roleLevel = 3;//角色等级
+		optional int32 roleHeart = 4;//角色生命值
+		optional int32 roleHelp = 5;//助战次数
+	}
+	optional string msgInfo = 1;//消息
+	repeated FriendList friendList = 2;//好友列表
+	optional int32 acktime = 3;
+}
+

@@ -1,0 +1,6 @@
+package protobuf;
+
+message SetControl_Ack {
+	optional string msgInfo = 1;		//返回 成功 (返回1, 失败0)
+	required int32 acktime  = 2; 		//时间截
+}

@@ -1,0 +1,6 @@
+package protobuf;
+
+message SendHeart_Req {
+	required string token = 1;
+	required int32 playerId = 2;
+}

@@ -1,0 +1,10 @@
+package protobuf;
+
+message TaskCount_Ack {
+	optional string msgInfo = 1;//消息
+	optional int32 taskcount = 2;//分数
+	optional int32 mailcount = 3;//排名
+	optional int32 acktime = 4;
+}
+
+

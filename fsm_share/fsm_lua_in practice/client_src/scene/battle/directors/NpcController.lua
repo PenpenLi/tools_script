@@ -1,0 +1,3 @@
+local NpcController = {}
+
+return NpcController

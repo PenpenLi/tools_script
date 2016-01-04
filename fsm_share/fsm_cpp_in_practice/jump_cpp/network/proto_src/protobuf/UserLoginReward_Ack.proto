@@ -1,0 +1,8 @@
+package protobuf;
+
+message UserLoginReward_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional int32 acttime = 2;
+
+}

@@ -1,0 +1,8 @@
+package protobuf;
+
+message ChooseRole_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional int32 roleType = 2;
+	required int32 acktime = 3;
+}

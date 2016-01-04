@@ -1,0 +1,8 @@
+package protobuf;
+
+message MailDel_Ack {
+
+	optional string msgInfo = 1;//消息
+	required int32 acktime = 2;//当前时间戳
+}
+

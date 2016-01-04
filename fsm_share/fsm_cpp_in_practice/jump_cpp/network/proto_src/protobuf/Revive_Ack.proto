@@ -1,0 +1,9 @@
+package protobuf;
+
+message Revive_Ack {
+	optional string msgInfo = 1;	//消息
+	optional int32 subdiamond = 2;		//扣掉钻石
+	optional int32 diamond = 3;		//剩余钻石
+	optional int32 acktime = 4;
+	
+}

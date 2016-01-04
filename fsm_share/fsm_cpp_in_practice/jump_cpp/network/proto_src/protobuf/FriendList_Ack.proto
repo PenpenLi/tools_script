@@ -1,0 +1,22 @@
+package protobuf;
+
+message FriendList_Ack {
+
+	message FriendList {
+		optional int32 playerId = 1;
+		optional string nickname = 2;
+		optional int32 level = 3;
+		optional int32 score = 4;
+		optional string distance = 5;//距离
+		optional bool isSendHeart = 6;//是否可送心
+		optional int32 roleType = 7;
+		optional int32 helpNum = 8;//助战次数
+	}
+	optional string msgInfo = 1;//消息
+	repeated FriendList friendList = 2;//好友列表
+	optional int32 pageType = 3;//1.平台 2.好友 3.附近
+	optional int32 score = 4;//分数
+	optional int32 rank = 5;//排名
+	optional int32 acktime = 6;
+}
+

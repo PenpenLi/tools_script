@@ -1,0 +1,5 @@
+package protobuf;
+
+message FriendHelpList_Req {
+	required string token = 1;
+}

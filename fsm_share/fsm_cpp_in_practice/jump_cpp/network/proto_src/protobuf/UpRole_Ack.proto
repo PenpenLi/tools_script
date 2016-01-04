@@ -1,0 +1,14 @@
+package protobuf;
+
+message UpRole_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional int32 roleType = 2;
+	optional int32 roleLevel = 3;//角色等级
+	optional int32 coin = 4;//玩家金币
+	optional int32 diamond = 5;//玩家钻石
+	optional bool breakType = 6;//是否能突破
+	optional bool isMax = 7;//是否满级
+	required int32 acktime = 8;
+
+}

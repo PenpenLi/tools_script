@@ -1,0 +1,6 @@
+package protobuf;
+
+message StageGame_Ack {
+	optional string msgInfo = 1;//ÏûÏ¢
+	required int32 acktime = 2;
+}

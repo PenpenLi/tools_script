@@ -1,0 +1,15 @@
+package protobuf;
+
+message lastRankList_Ack {
+
+	message lastRank {
+		optional string nickname = 1;
+		optional int32 level = 2;
+		optional int32 score = 3;
+		optional int32 roleType = 4;
+	}
+	optional string msgInfo = 1;//消息
+	repeated lastRank rankList = 2;//排行列表
+	optional int32 acktime = 3;
+
+}

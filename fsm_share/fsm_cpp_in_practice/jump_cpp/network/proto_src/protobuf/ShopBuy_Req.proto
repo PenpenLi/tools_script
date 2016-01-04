@@ -1,0 +1,7 @@
+package protobuf;
+
+message ShopBuy_Req {
+	required string token = 1;		//TOKEN	
+	required int32 buytype = 2;		//商城类别(爱心商城1,金币商城2，钻石商城3)
+	required int32 itmeid = 3;	    //购买ID号
+}

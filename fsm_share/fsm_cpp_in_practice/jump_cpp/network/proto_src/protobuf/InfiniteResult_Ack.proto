@@ -1,0 +1,10 @@
+package protobuf;
+
+message InfiniteResult_Ack {
+	optional string msgInfo = 1;	//消息
+	optional int32 allmax = 2;		//历史最高分数
+	optional int32 weekmax = 3;		//本周最高分数
+	optional int32 maxtype = 4;		//是否是本周最高 1, 历史最高 2 ,都不是最高0
+	optional int32 crowntype = 5;	//皇冠类型: 0.无 1.铜 2.银 3.金
+	optional int32 acktime = 6;
+}

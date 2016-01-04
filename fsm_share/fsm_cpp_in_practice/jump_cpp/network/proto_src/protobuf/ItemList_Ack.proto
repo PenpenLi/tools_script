@@ -1,0 +1,12 @@
+package protobuf;
+
+message ItemList_Ack {
+	message ItemList {
+		optional int32 itemid = 1;				//物品ID
+		optional int32 count = 2;				//数量
+	}
+	optional string msgInfo = 1;				//消息
+	repeated ItemList itemlist = 2;				//物品列表
+	optional int32 ItemId  = 3;					//祝福道具
+	optional int32 acktime = 4;
+}

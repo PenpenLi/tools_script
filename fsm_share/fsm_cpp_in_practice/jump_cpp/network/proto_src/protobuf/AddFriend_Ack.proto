@@ -1,0 +1,7 @@
+package protobuf;
+
+message AddFriend_Ack {
+
+	optional string msgInfo = 1;
+	required int32 acktime = 2;
+}

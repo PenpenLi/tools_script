@@ -1,0 +1,5 @@
+package protobuf;
+
+message UserLoginReward_Req {
+	required string token = 1;
+}

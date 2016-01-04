@@ -1,0 +1,10 @@
+package protobuf;
+
+message UpHeart_Ack {
+	optional string msgInfo = 1;//消息
+	optional int32 heart = 2;//当前体力
+	optional int32 remainTime = 3;//剩余时间(秒)
+	optional int32 maxTime = 4;//总计数
+	required int32 acktime = 5;//当前时间戳
+}
+

@@ -1,0 +1,6 @@
+package protobuf;
+
+message Opinion_Req {
+	required string token = 1;		//TOKEN	
+	required string message = 2;	//意见反馈
+}

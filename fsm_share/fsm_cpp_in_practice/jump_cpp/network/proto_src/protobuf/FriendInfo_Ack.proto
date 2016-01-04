@@ -1,0 +1,11 @@
+package protobuf;
+
+message FriendInfo_Ack {
+
+	optional string msgInfo = 1;
+	optional string nickname = 2;
+	optional int32 score = 3;//历史分数
+	optional int32 stage = 4;//关卡
+	optional bool type = 5;//是否为好友
+	required int32 acktime = 6;
+}

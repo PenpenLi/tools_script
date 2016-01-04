@@ -1,0 +1,8 @@
+package protobuf;
+
+message ItemAdd_Ack {
+	optional string msgInfo = 1;				//消息
+	optional int32  itemid = 2;				    //物品ID
+	optional int32 	count = 3;	    			//总数量
+	optional int32  acktime = 4;
+}

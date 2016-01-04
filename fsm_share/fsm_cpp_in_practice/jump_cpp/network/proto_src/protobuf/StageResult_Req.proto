@@ -1,0 +1,12 @@
+package protobuf;
+
+message StageResult_Req {
+	required string token = 1;		//TOKEN	
+	required int32 	score = 2;		//当前分数
+	required int32 	coin  = 3;		//获得金币
+	required int32 	jumpheiht  = 4;		//跳越高度
+	required int32 	killmonster  = 5;		//击杀怪物
+	required int32 	star  = 6;		//星数
+	required int32 	stageId  = 7;		//当前关卡
+	required int32 	revive  = 8;		//复活次数
+}

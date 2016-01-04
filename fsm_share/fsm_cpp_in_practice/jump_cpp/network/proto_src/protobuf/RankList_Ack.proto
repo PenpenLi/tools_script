@@ -1,0 +1,19 @@
+package protobuf;
+
+message RankList_Ack {
+
+	message Rank {
+		optional int32 playerId = 1;
+		optional string nickname = 2;
+		optional int32 level = 3;
+		optional int32 score = 4;
+		optional int32 roleType = 5;
+	}
+	optional string msgInfo = 1;//消息
+	optional int32 scoreType = 2;//1.历史 2.本周
+	optional int32 rankType = 3;//1.好友 2.全服
+	repeated Rank rankList = 4;//排行列表
+	required int32 acktime = 5;
+
+}
+

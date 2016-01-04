@@ -1,0 +1,11 @@
+package protobuf;
+
+message ShopBuy_Ack {
+	optional string msgInfo = 1;		//返回 成功 (返回1, 失败0)
+	optional int32 buytype = 2;			//商城类别(爱心商城1,金币商城2，钻石商城3)
+	optional int32 value = 3;	    	//返回当前购买类型的数值总量
+	optional int32 heart = 4;	       //消耗后的数量
+	optional int32 coin = 5;	       //消耗后的数量
+	optional int32 diamond = 6;	       //消耗后的数量
+	optional int32 acktime  = 7; 		//时间截
+}

@@ -1,0 +1,9 @@
+package protobuf;
+
+message FriendList_Req {
+
+	optional string token = 1;
+	optional string longitude = 2;//经度
+	optional string latitude = 3;//纬度
+	optional int32 pageType = 4;//1.平台 2.好友 3.附近
+}

@@ -1,0 +1,69 @@
+//
+//  GameSound.h
+//  HiJump
+//
+//  Created by imac on 13-11-6.
+//
+//
+
+#ifndef __HiJump__GameSound__
+#define __HiJump__GameSound__
+
+#define MUSIC_LAYER_INGAME	"BG_LAYER_INGAME.mp3"
+#define MUSIC_LAYER_NORMAL	"BG_LAYER_NORMAL.mp3"
+#define MUSIC_LAYER_REWARD	"BG_LAYER_REWARD.mp3"
+
+#define EFF_MONSTER_APPEAR	"EFF_MONSTER_APPEAR.mp3"
+#define EFF_NEW_RECORD	"EFF_NEW_RECORD.mp3"
+#define EFF_GOAL_UP	"EFF_GOAL_UP.mp3"
+#define EFF_BOMB_LADDER	"EFF_BOMB_LADDER.mp3"
+#define EFF_SPRINT_PROP	"EFF_SPRINT_PROP.mp3"
+#define EFF_REWARDLAYER_END	"EFF_REWARDLAYER_END.mp3"
+#define EFF_REWARDLAYER_START	"EFF_REWARDLAYER_START.mp3"
+#define EFF_RANK_UP	"EFF_RANK_UP.mp3"
+#define EFF_FISH_MISSILE	"EFF_FISH_MISSILE.mp3"
+#define EFF_INTO_SEABOTTOM	"EFF_INTO_SEABOTTOM.mp3"
+#define EFF_LEVEL_UP	"EFF_LEVEL_UP.mp3"
+#define EFF_DROP_DOWN	"EFF_DROP_DOWN.mp3"
+#define EFF_FLIGHT_BOOSTER	"EFF_FLIGHT_BOOSTER.mp3"
+#define EFF_HIT_BY_MISSILE	"EFF_HIT_BY_MISSILE.mp3"
+#define EFF_PROPELLER	"EFF_PROPELLER.mp3"
+#define EFF_FRY_BLACK	"EFF_FRY_BLACK.mp3"
+#define EFF_USE_DIAMOND	"EFF_USE_DIAMOND.mp3"
+#define EFF_USE_COUNT	"EFF_USE_COUNT.mp3"
+#define EFF_CHANGE_PAGE	"EFF_CHANGE_PAGE.mp3"
+#define EFF_GET_DIAMOND	"EFF_GET_DIAMOND.mp3"
+#define EFF_SEABOTTOM	"EFF_SEABOTTOM.mp3"
+#define EFF_USE_GOLD	"EFF_USE_GOLD.mp3"
+#define EFF_GET_GOLD	"EFF_GET_GOLD.mp3"
+#define EFF_TOBIG_TOUCHLADDER	"EFF_TOBIG_TOUCHLADDER.mp3"
+#define EFF_MAGNET	"EFF_MAGNET.mp3"
+#define EFF_MONSTER_DIE_SHOOT	"EFF_MONSTER_DIE_SHOOT.mp3"
+#define EFF_SPRING	"EFF_SPRING.mp3"
+#define EFF_RANDOM_ITEM	"EFF_RANDOM_ITEM.mp3"
+#define EFF_BREAK_LADDER	"EFF_BREAK_LADDER.mp3"
+#define EFF_REWARD_START	"EFF_REWARD_START.mp3"
+#define EFF_TRAMPOLINE	"EFF_TRAMPOLINE.mp3"
+#define EFF_SECOND_JUMP	"EFF_SECOND_JUMP.mp3"
+#define EFF_BUBBLE_SHIELD	"EFF_BUBBLE_SHIELD.mp3"
+#define EFF_BULLET	"EFF_BULLET.mp3"
+#define EFF_SUCCESS_BUY_PROP	"EFF_SUCCESS_BUY_PROP.mp3"
+#define EFF_BIG_GOLD	"EFF_BIG_GOLD.mp3"
+#define EFF_GOLD	"EFF_GOLD.mp3"
+#define EFF_SINGLE_TREAD_LADDER	"EFF_SINGLE_TREAD_LADDER.mp3"
+#define EFF_MONSTER_DIE_TREAD	"EFF_MONSTER_DIE_TREAD.mp3"
+#define EFF_TOUCH_MONSTER	"EFF_TOUCH_MONSTER.mp3"
+#define EFF_TREAD_LADDER	"EFF_TREAD_LADDER.mp3"
+#define EFF_CONTROL_LADDER	"EFF_CONTROL_LADDER.mp3"
+#define EFF_CLOSE_PAGE	"EFF_CLOSE_PAGE.mp3"
+#define EFF_NOMAL_CLICK_BTN	"EFF_NOMAL_CLICK_BTN.mp3"
+
+class GameSound {
+public:
+    static void preloadMusic();
+    static void playBackgroundMusic(std::string musicName);
+    static void playEffectMusic(std::string musicName);
+	static void playEffectMusic(std::string musicName, bool bl);
+    static void stopEffectMusic(std::string musicName);
+};
+#endif /* defined(__HiJump__GameSound__) */

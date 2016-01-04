@@ -1,0 +1,5 @@
+package protobuf;
+
+message StageGame_Req {
+	required string token = 1;
+}

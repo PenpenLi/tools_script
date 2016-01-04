@@ -1,0 +1,8 @@
+package protobuf;
+
+message StartGame_Ack {
+
+	optional string msgInfo = 1;
+	optional int32 helpCount = 2;
+	required int32 acktime = 3;
+}

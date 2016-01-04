@@ -1,0 +1,6 @@
+package protobuf;
+
+message Revive_Req {
+	required string token = 1;		//TOKEN	
+	required int32 	count = 2;		//复活次数  最多三次
+}

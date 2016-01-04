@@ -1,0 +1,10 @@
+package protobuf;
+
+message UserRegister_Ack {
+	optional string msgInfo = 1;
+	
+	optional string username = 2;
+	optional string password = 3;
+	required int32 acktime = 4;
+}
+

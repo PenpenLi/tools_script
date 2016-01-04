@@ -1,0 +1,8 @@
+package protobuf;
+
+message ChooseStage_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional int32 stageId = 2;
+	optional int32 acktime = 3;
+}

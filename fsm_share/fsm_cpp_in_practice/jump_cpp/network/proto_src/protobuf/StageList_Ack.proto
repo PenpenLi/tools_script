@@ -1,0 +1,17 @@
+package protobuf;
+
+message StageList_Ack {
+
+	message StageList {
+
+		optional int32 stageId = 1;//关卡ID
+		optional int32 star = 2;//星数
+	}
+
+	optional string msgInfo = 1;//消息
+	optional int32 sumStar = 2;//已获得的星数
+	repeated StageList stageList = 3;//已开启的关卡列表
+	optional int32 newStage = 4;
+	optional int32 acktime = 5;
+}
+

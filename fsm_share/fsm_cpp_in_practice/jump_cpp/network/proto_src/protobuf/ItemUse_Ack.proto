@@ -1,0 +1,7 @@
+package protobuf;
+
+message ItemUse_Ack {
+	optional string msgInfo = 1;				//消息
+	optional int32  itemid = 2;				    //物品ID
+	optional int32  acktime = 3;
+}

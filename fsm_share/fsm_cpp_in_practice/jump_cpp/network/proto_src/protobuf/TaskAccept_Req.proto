@@ -1,0 +1,7 @@
+package protobuf;
+
+//接受任务
+message TaskAccept_Req {
+	optional string token = 1;
+	optional int32 task_id = 2;//任务ID
+}

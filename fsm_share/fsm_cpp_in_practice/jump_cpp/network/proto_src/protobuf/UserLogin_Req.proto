@@ -1,0 +1,7 @@
+package protobuf;
+
+message UserLogin_Req {
+	required string username = 1;//用户名
+	required string password = 2;//密码
+}
+

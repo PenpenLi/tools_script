@@ -1,0 +1,46 @@
+<?php
+
+include 'db_config.php';
+
+$url = $_SERVER["REQUEST_URI"];
+
+$queryStr = $_SERVER["QUERY_STRING"];
+
+parse_str($queryStr, $params);
+
+
+$mysql_connect = mysql_connect($db_ip, $db_user, $db_pw);
+if (!$mysql_connect)
+{
+	//die('Could not connect: ' . mysql_error());
+	error_log("db connect failed" ."\r\n", 3, "/nfsroot/html_onefigure/debug.info");
+	exit();
+}
+
+mysql_select_db("pay_verify_db", $mysql_connect);
+
+$sql="INSERT INTO op_360_notify (APP_KEY, PRODUCT_ID, AMOUNT, APP_UID, APP_EXT1, APP_EXT2, USER_ID, ORDER_ID, GATEWAY_FLAG, SIGN_TYPE, APP_ORDER_ID, SIGN_RETURN, SIGN)
+VALUES
+('$params[app_key]', '$params[product_id]', '$params[amount]', '$params[app_uid]', '$params[app_ext1]', '$params[app_ext2]', '$params[user_id]', '$params[order_id]', '$params[gateway_flag]', '$params[sign_type]', '$params[app_order_id]', '$params[sign_return]', '$params[sign]')";
+
+if (!mysql_query($sql, $mysql_connect))
+{
+  //die('Error: ' . mysql_error());
+	error_log("db query failed" ."\r\n", 3, "/nfsroot/html_onefigure/debug.info");
+	exit();
+}
+
+// update op_order_info 
+$sql = "UPDATE op_order_info SET VERIFY_STATE='SUCCESS', TRANSACTION_ID='$params[order_id]' WHERE ORDER_ID='$params[app_order_id]'";
+if (!mysql_query($sql))
+{
+  //die('Error: ' . mysql_error());
+	error_log("db query failed" ."\r\n", 3, "/nfsroot/html_onefigure/debug.info");
+	exit();
+}
+
+mysql_close($mysql_connect);
+
+print_r('ok');
+
+?>

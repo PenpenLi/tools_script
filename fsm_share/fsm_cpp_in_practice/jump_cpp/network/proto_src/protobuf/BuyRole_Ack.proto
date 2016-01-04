@@ -1,0 +1,11 @@
+package protobuf;
+
+message BuyRole_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional int32 roleType = 2;
+	optional int32 coin = 3;//玩家金币
+	optional int32 diamond = 4;//玩家钻石
+	optional int32 acktime = 5;
+
+}

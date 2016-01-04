@@ -1,0 +1,6 @@
+package protobuf;
+
+message Gift_Req {
+	optional string token = 1;
+	optional string giftid  = 2;   //¼¤»îÂë
+}

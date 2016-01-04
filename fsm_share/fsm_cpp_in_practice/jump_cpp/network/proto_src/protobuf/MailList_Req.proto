@@ -1,0 +1,5 @@
+package protobuf;
+
+message MailList_Req {
+	required string token = 1;
+}

@@ -1,0 +1,10 @@
+package protobuf;
+
+message TaskAccept_Ack {
+	optional string msgInfo  = 1;   //消息
+	optional int32 task_id = 2;     //领取任务的id
+	optional int32 coin = 3;		//奖励金币
+	optional int32 diamond = 4;		//奖励钻石
+	optional int32 acktime = 5;
+}
+

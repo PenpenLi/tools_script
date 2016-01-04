@@ -1,0 +1,8 @@
+package protobuf;
+
+message Notice_Ack {
+	optional string msgInfo = 1;		
+	optional string contents = 2;		//内容
+	optional string imgUrl = 3;			//图片路径
+	optional int32 acktime  = 4; 		//时间截
+}

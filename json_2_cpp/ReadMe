@@ -1,0 +1,7 @@
+cd script
+
+php auto_create_cpp.php
+
+json is input UI export configure file;
+cpp_output is created cpp file
+

@@ -1,0 +1,23 @@
+package protobuf;
+
+message MailList_Ack {
+
+	message MailList {
+		optional int32 mailId = 1;//邮件ID
+		optional int32 mailType = 2;//邮件类型(0.好友请求 1.道具 2.体力 3.系统公告)
+		optional int32 playerId = 3;//玩家ID(0为系统)
+		optional string nickname = 4;//名称
+		optional int32 itemId = 5;//物品ID(0为体力)
+		optional int32 itemNum = 6;//物品或体力数量
+		optional string title = 7;//主题
+		optional string contents = 8;//内容
+		optional int32 status = 9;//状态(0.未读 1.未领取 2.已领取)
+		optional string domainTime = 10;//剩余时间(小时或天)
+	}
+	optional string msgInfo = 1;//消息
+	required int32 mailCount = 2;//邮件数量
+	repeated MailList mailList = 3;//邮件列表
+	required int32 acktime = 4;
+}
+
+

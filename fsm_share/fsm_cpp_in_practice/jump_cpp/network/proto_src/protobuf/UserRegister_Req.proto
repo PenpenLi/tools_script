@@ -1,0 +1,6 @@
+package protobuf;
+
+message UserRegister_Req {
+	required string username = 1;
+	required string password = 2;
+}

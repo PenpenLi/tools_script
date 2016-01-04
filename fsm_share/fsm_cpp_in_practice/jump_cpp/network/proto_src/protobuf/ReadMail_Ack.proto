@@ -1,0 +1,11 @@
+package protobuf;
+
+message ReadMail_Ack {
+
+	optional string msgInfo = 1;//消息
+	optional string title = 2;//主题
+	optional string content = 3;//内容
+	required int32 acktime = 4;
+
+}
+

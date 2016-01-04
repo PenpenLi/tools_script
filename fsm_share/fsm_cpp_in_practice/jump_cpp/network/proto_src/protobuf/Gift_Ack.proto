@@ -1,0 +1,10 @@
+package protobuf;
+
+message Gift_Ack {
+	optional string msgInfo  = 1;   //消息
+	optional int32 coin = 2;		//奖励金币
+	optional int32 diamond = 3;		//奖励钻石
+	optional int32 heart = 4;		//体力
+	optional string info = 5;		//冲刺*1，死亡冲刺*1，超级保护罩*1，分数加成*1
+	optional int32 acktime = 6;
+}

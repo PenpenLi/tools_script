@@ -1,0 +1,5 @@
+package protobuf;
+
+message ResultRank_Req {
+	required string token = 1;		//TOKEN
+}

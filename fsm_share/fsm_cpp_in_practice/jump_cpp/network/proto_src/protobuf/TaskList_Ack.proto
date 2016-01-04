@@ -1,0 +1,15 @@
+package protobuf;
+
+message TaskList_Ack {
+	message TaskList {
+		optional int32 taskid = 1;   //任务ID
+		optional int32 tasktype = 2; //任务状态(0,默认状态 ，1,完成可领取奖励状态， 2，全部完成(置黑))
+		optional int32 present = 3;   //进度
+		optional int32 total = 4;   //总量
+
+	}
+	optional string msgInfo  = 1;   //消息
+	repeated TaskList tasklist = 2;//任务列表
+	required int32 acktime = 3;
+}
+

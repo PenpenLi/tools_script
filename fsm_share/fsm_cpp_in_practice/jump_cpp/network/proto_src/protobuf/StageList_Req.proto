@@ -1,0 +1,6 @@
+package protobuf;
+
+message StageList_Req {
+
+	optional string token = 1;
+}

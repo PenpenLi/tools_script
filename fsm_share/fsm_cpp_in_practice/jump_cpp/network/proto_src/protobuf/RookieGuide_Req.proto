@@ -1,0 +1,6 @@
+package protobuf;
+
+message RookieGuide_Req {
+	required string token = 1;
+	required int32 guideId = 2;//当前引导ID
+}
