@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI
+END
+VuAiInstance.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiInstance.h
+END
+VuAiManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiManager.cpp
+END
+VuAiPowerUpTracker.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiPowerUpTracker.cpp
+END
+VuAiManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiManager.h
+END
+VuAiPowerUpTracker.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiPowerUpTracker.h
+END
+VuAiDriverHint.h
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiDriverHint.h
+END
+VuAiRayTest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiRayTest.cpp
+END
+VuAiBrain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiBrain.cpp
+END
+VuAiTuningVariables.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiTuningVariables.cpp
+END
+VuAiBehavior.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiBehavior.cpp
+END
+VuAiUtils.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiUtils.cpp
+END
+VuAiRayTest.h
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiRayTest.h
+END
+VuAiBrain.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiBrain.h
+END
+VuAiTuningVariables.h
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiTuningVariables.h
+END
+VuAiInstance.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiInstance.cpp
+END
+VuAiBehavior.h
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiBehavior.h
+END
+VuAiUtils.h
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/AI/VuAiUtils.h
+END

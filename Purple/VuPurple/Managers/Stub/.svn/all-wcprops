@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub
+END
+VuStubCloudTuningManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubCloudTuningManager.cpp
+END
+VuStubGameServicesManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubGameServicesManager.cpp
+END
+VuStubBillingManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubBillingManager.cpp
+END
+VuStubAdManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubAdManager.cpp
+END
+VuStubCommunityManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubCommunityManager.cpp
+END
+VuStubExpansionFileManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubExpansionFileManager.cpp
+END
+VuStubAnalyticsManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubAnalyticsManager.cpp
+END
+VuStubVideoShareManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Stub/VuStubVideoShareManager.cpp
+END

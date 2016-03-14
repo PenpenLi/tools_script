@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android
+END
+VuAndroidAnalyticsManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidAnalyticsManager.cpp
+END
+VuAndroidCommunityManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidCommunityManager.h
+END
+VuAndroidAdManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidAdManager.h
+END
+VuAndroidVideoShareManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidVideoShareManager.cpp
+END
+VuAndroidCloudTuningManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidCloudTuningManager.cpp
+END
+VuAndroidAnalyticsManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidAnalyticsManager.h
+END
+VuAndroidVideoShareManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidVideoShareManager.h
+END
+VuAndroidCloudTuningManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidCloudTuningManager.h
+END
+VuAndroidExpansionFileManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidExpansionFileManager.cpp
+END
+VuAndroidExpansionFileManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidExpansionFileManager.h
+END
+VuAndroidGameServicesManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidGameServicesManager.cpp
+END
+VuAndroidSkyGiftManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidSkyGiftManager.cpp
+END
+VuAndroidBillingManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidBillingManager.cpp
+END
+VuAndroidGameServicesManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidGameServicesManager.h
+END
+VuAndroidCommunityManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidCommunityManager.cpp
+END
+VuAndroidAdManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidAdManager.cpp
+END
+VuAndroidSkyGiftManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidSkyGiftManager.h
+END
+VuAndroidBillingManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Android/VuAndroidBillingManager.h
+END

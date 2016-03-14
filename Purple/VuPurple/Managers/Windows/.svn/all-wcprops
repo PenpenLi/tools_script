@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Windows
+END
+VuWindowsBillingManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Windows/VuWindowsBillingManager.cpp
+END
+VuWindowsCommunityManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Windows/VuWindowsCommunityManager.cpp
+END
+VuWindowsCloudSaveManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Windows/VuWindowsCloudSaveManager.cpp
+END
+VuWindowsCloudSaveManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Windows/VuWindowsCloudSaveManager.h
+END

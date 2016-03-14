@@ -1,0 +1,76 @@
+10
+
+dir
+13442
+https://svn1.sky-mobi.com:9991/svn/gamesea/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple
+https://svn1.sky-mobi.com:9991/svn/gamesea
+
+
+
+2016-03-02T08:37:07.879866Z
+13442
+dan_liu
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+5e4637c4-e56c-11e3-bfb8-452c6e12470d
+
+Services
+dir
+
+PowerUps
+dir
+
+Gfx
+dir
+
+Entities
+dir
+
+Components
+dir
+
+AI
+dir
+
+NetModule
+dir
+
+Games
+dir
+
+Pfx
+dir
+
+Managers
+dir
+
+Protocol
+dir
+
+Assets
+dir
+
+Track
+dir
+
+Modes
+dir
+
+Dynamics
+dir
+
+Util
+dir
+

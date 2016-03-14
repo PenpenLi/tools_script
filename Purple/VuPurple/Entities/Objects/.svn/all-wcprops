@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects
+END
+VuTestCameraEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuTestCameraEntity.cpp
+END
+VuFrontEndCameraEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuFrontEndCameraEntity.cpp
+END
+VuUiCars.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuUiCars.cpp
+END
+VuAiWaypointEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuAiWaypointEntity.h
+END
+VuBillboardEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuBillboardEntity.cpp
+END
+VuLavaSurfaceEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuLavaSurfaceEntity.cpp
+END
+VuJumpPointEntities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuJumpPointEntities.cpp
+END
+VuRampEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuRampEntity.cpp
+END
+VuPowerUpEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuPowerUpEntity.cpp
+END
+VuSpringEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuSpringEntity.cpp
+END
+VuBreakableGamePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuBreakableGamePropEntity.cpp
+END
+VuRigidBodyDeactivationEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuRigidBodyDeactivationEntity.cpp
+END
+VuGameWhirlpoolEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuGameWhirlpoolEntity.cpp
+END
+VuBreakablePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuBreakablePropEntity.cpp
+END
+VuGridPositionEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuGridPositionEntity.cpp
+END
+VuGamePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuGamePropEntity.cpp
+END
+VuForceAffector.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuForceAffector.cpp
+END
+VyDynamicBreakableGamePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VyDynamicBreakableGamePropEntity.cpp
+END
+VuCarBarrierEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuCarBarrierEntity.cpp
+END
+VuAnimatedGamePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuAnimatedGamePropEntity.cpp
+END
+VuBreakablePropEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuBreakablePropEntity.h
+END
+VuUiDrivers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuUiDrivers.cpp
+END
+VuOutOfBoundsEntities.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuOutOfBoundsEntities.cpp
+END
+VuDynamicGamePropEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuDynamicGamePropEntity.cpp
+END
+VuAnimatedBreakableRagdollEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuAnimatedBreakableRagdollEntity.cpp
+END
+VuCinematicIntroCameraEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuCinematicIntroCameraEntity.cpp
+END
+VuGhostCarPlaybackEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuGhostCarPlaybackEntity.cpp
+END
+VuCarEffectEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuCarEffectEntity.cpp
+END
+VuAiWaypointEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Objects/VuAiWaypointEntity.cpp
+END

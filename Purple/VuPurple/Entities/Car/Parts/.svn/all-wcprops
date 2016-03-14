@@ -1,0 +1,125 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts
+END
+VuCarAnimController.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarAnimController.h
+END
+VuCarChassis.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarChassis.cpp
+END
+VuCarEffectController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarEffectController.cpp
+END
+VuCarPfxController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarPfxController.cpp
+END
+VuCarChassis.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarChassis.h
+END
+VuCarWheel.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarWheel.cpp
+END
+VuCarPowerUpController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarPowerUpController.cpp
+END
+VuCarEngine.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarEngine.cpp
+END
+VuCarEffectController.h
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarEffectController.h
+END
+VuCarPfxController.h
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarPfxController.h
+END
+VuCarSuspension.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarSuspension.cpp
+END
+VuCarWheel.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarWheel.h
+END
+VuCarPowerUpController.h
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarPowerUpController.h
+END
+VuCarEngine.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarEngine.h
+END
+VuCarSuspension.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarSuspension.h
+END
+VuCarHeadlights.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarHeadlights.cpp
+END
+VuCarHeadlights.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarHeadlights.h
+END
+VuCarShadow.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarShadow.cpp
+END
+VuCarAnimController.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarAnimController.cpp
+END
+VuCarShadow.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Parts/VuCarShadow.h
+END

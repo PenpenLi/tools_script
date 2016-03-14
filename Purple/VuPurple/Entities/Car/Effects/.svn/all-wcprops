@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects
+END
+VuCarFreezeEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarFreezeEffect.cpp
+END
+VuCarDropBallsEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarDropBallsEffect.cpp
+END
+VuCarOilyTiresEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarOilyTiresEffect.cpp
+END
+VuCarEffect.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarEffect.h
+END
+VuCarBoostEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarBoostEffect.cpp
+END
+VuCarWrestlingVictimEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarWrestlingVictimEffect.cpp
+END
+VuCarEarthquakeEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarEarthquakeEffect.cpp
+END
+VuCarNitroEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarNitroEffect.cpp
+END
+VuCarRemoteControlEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarRemoteControlEffect.cpp
+END
+VuCarSuperEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarSuperEffect.cpp
+END
+VuCarDiscoEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarDiscoEffect.cpp
+END
+VuCarTornadoEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarTornadoEffect.cpp
+END
+VuCarAttachRagdollEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarAttachRagdollEffect.cpp
+END
+VuSimpleCarEffects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuSimpleCarEffects.cpp
+END
+VuCarPlantEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarPlantEffect.cpp
+END
+VuDropObstacleEffects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuDropObstacleEffects.cpp
+END
+VuCarTranslocateEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarTranslocateEffect.cpp
+END
+VuCarEffect.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuCarEffect.cpp
+END
+VuShootMissileEffects.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Effects/VuShootMissileEffects.cpp
+END

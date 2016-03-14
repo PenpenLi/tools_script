@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver
+END
+VuHumanDriverEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuHumanDriverEntity.h
+END
+VuAiDriverEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuAiDriverEntity.h
+END
+VuDriverEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuDriverEntity.cpp
+END
+VuDriverEntity.h
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuDriverEntity.h
+END
+VuHumanDriverEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuHumanDriverEntity.cpp
+END
+VuAiDriverEntity.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Entities/Car/Driver/VuAiDriverEntity.cpp
+END

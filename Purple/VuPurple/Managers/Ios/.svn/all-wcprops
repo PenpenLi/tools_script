@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios
+END
+VuIosGameServicesManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosGameServicesManager.cpp
+END
+VuIosAnalyticsManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosAnalyticsManager.mm
+END
+VuIosCloudTuningManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCloudTuningManager.h
+END
+VuIosGameServicesManagerObjC.h
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosGameServicesManagerObjC.h
+END
+VuIosVideoShareManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosVideoShareManager.mm
+END
+VuIosCloudTuningManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCloudTuningManager.mm
+END
+VuIosGameServicesManagerObjC.mm
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosGameServicesManagerObjC.mm
+END
+VuIosBillingManager.h
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosBillingManager.h
+END
+VuIosCloudSaveManager.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCloudSaveManager.cpp
+END
+VuIosBillingManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosBillingManager.mm
+END
+VuIosCloudSaveManagerObjC.h
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCloudSaveManagerObjC.h
+END
+VuIosCloudSaveManagerObjC.mm
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCloudSaveManagerObjC.mm
+END
+VuIosAdManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosAdManager.mm
+END
+VuIosCommunityManager.mm
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/svn/gamesea/!svn/ver/11939/bbr/SRC/client/branches/Purple_Fengku/code/VectorEngine5/Purple/VuPurple/Managers/Ios/VuIosCommunityManager.mm
+END
