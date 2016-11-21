@@ -1,0 +1,6 @@
+#!/bin/sh -e
+/usr/bin/php /home/www/ramboat/v2/cmd_backup_rank.php
+
+echo "backup ok 28" > /tmp/backup.ok
+
+

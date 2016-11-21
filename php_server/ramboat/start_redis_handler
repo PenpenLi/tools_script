@@ -1,0 +1,5 @@
+#!/bin/sh -e
+nohup /usr/bin/php /home/www/ramboat/v1/redis_subscribe_handler.php &
+
+
+

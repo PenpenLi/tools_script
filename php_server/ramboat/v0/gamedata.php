@@ -1,0 +1,342 @@
+<?php
+include_once 'helper.php';
+include_once 'db.php';
+
+function handler_updateLoginInfo($redis, $channel, $msg) {
+	helper_log("redis submsg: " . $msg);
+	$pubMsg = json_decode($msg, true);
+	$db = new DB();
+	$db->updateUser($pubMsg);
+}
+
+class GameData {
+	private $USER_HASH = 'RAMBOAT_USER_HASH';
+	private $PREFIX = '';
+	private $SCORE_RANK = 'SCORE';
+	private $YESTERDAY_SCORE_RANK = 'YESTERDAYSCORE';
+	private $LAST_SCORE_RANK = 'LASTSCORE';
+	private $MAX_SCORE_RANK = 'MAXSCORE';
+	private $LOGIN_RANK = 'LOGIN';
+	private $db;
+	private $redis;
+
+	function __construct() {
+		$this->db = new DB();
+		$this->redis = new Redis();
+		$this->redis->connect('127.0.0.1', 6380);
+	}
+	function __destruct() {
+	}
+
+	public function addNewUser($userInfo) {
+		$dataArray = array(
+			'USERID' => $userInfo['userId'],
+			'NAME' => $userInfo['name'],
+			'PW' => $userInfo['pw'],
+			'ICON' => $userInfo['icon'],
+			'LEVEL' => 0,
+			'SCORE' => 0,
+			'MAXSCORE' => 0,
+			// 'LOGINTIMES' => 0,
+			// 'LOGINSTAMP' => 0,
+			'LASTLOGINDAY' => intval(date("w")),
+			'LASTWEEKRANK' => '',
+			'RANK1' => '',
+			'RANK2' => '',
+			'RANK3' => '',
+			'RANK4' => '',
+			'RANK5' => '',
+			'RANK6' => '',
+			'RANK7' => ''
+		);
+		if ($dataArray['ICON'] == "") {
+			$dataArray['ICON'] = '0';
+		}
+		$ret = $this->db->insertUser($dataArray);
+	}
+
+
+	public function userNameCheck($userName) {
+		$userName =preg_replace("/\s|　/","",$userName);
+		if($userName == '') {
+			return array ('code' => 1002);
+		}
+		if ($this->redis->sIsMember($NAMELIST, $userName)) {
+			return array ('code' => 1001);
+		}
+		$row = $this->db->selectUserByName(array('USERNAME' => $userName));
+		if ($row) {
+			$this->redis->sAdd($this->NAMELIST, $row['NAME']);
+			return array ('code' => 1001);
+		}
+		require_once('badword.src.php');
+		$badword1 = array_combine($badword,array_fill(0,count($badword),'*'));
+		$str = $userName;
+		$str = strtr($str, $badword1);
+		if ($str != $userName) {
+			$pos = 0;
+			for($i=1; $i<strlen($str); $i++) {
+				if ($str[$i] == '*') {
+					$pos = $i;
+					break;
+				}
+			}
+			$strSub = strlen(substr($str, $pos+1));
+			$strBefore = strlen(substr($userName, 0, $pos));
+			$strAfter = 0;
+			if ($strSub != 0) {
+				$strAfter = strlen(substr($userName, $strSub*-1));
+			}
+			$change = array (
+				$strBefore => '',
+				$strAfter => '');
+			$strResult = substr($userName, $pos, strlen($userName)-$pos-$strAfter);
+			return array ('code' => 1003, 'msg' => $strResult);
+		}
+		return false;
+	}
+
+
+	public function updateLoginInfo($userId, $timeStamp, $loginTimes) {
+		// $this->redis->zAdd($this->LOGIN_RANK, $loginTimes, $userId);
+		// $pubMsg = array('USERID' => $userId, 'LOGINTIMES' => $loginTimes, 'LOGINSTAMP' => $timeStamp);
+		// $this->redis->publish('logininfo_chan', json_encode($pubMsg));
+		$this->updateUserInfo(array('USERID' => $userId, 'LOGINTIMES' => $loginTimes, 'LOGINSTAMP' => $timeStamp));
+	}
+
+	public function modifyUserInfo($userId, $newname, $newicon) {
+		$modifyInfo = array("USERID" => $userId);
+		if ($newname) {
+			$modifyInfo['NAME'] = $newname;
+		}
+		if ($newicon) {
+			$modifyInfo['ICON'] = $newicon;
+		}
+		$this->updateUserInfo($modifyInfo);
+	}
+
+	public function updateUserScore($userId, $newscore, $newIcon) {
+		$updateInfo = array("USERID" => $userId);
+		if ($newscore) {
+			$updateInfo['SCORE'] = $newscore;
+		}
+		if ($newIcon) {
+			$updateInfo['ICON'] = $newIcon;
+		}
+		$userInfo = $this->getUserInfo($userId);
+		if ($updateInfo['SCORE'] <= $userInfo['SCORE']) {
+			return 2001;
+		}
+		$this->updateUserInfo($updateInfo);
+		return 1;
+	}
+
+	private function updateUserInfo($updateInfo) {
+		if (!$updateInfo || !isset($updateInfo['USERID'])) {
+			helper_log("[updateUserInfo] param invalid");
+			return;
+		}
+		$userId = $updateInfo['USERID'];
+		// 1. update userinfo memcache
+		$userInfo = $this->getUserInfo($userId);
+		foreach ($updateInfo as $key => $value) {
+			$userInfo[$key] = $value;
+		}
+		// $this->redis->set($this->PREFIX . $userId, json_encode($userInfo));
+		$this->redis->hSet($this->USER_HASH, $this->PREFIX . $userId, json_encode($userInfo));
+
+		// 2. update score rank memchache
+		if ($updateInfo['SCORE']) {
+			
+			$this->redis->zAdd($this->SCORE_RANK, intval($updateInfo['SCORE']), $userId);
+			if ($updateInfo['SCORE'] > $userInfo['MAXSCORE']) {
+				$this->redis->zAdd($this->MAX_SCORE_RANK, intval($updateInfo['SCORE']), $userId);
+				$userInfo['MAXSCORE'] = $updateInfo['SCORE'];
+				// update maxscore
+				$updateInfo['MAXSCORE'] = $updateInfo['SCORE'];
+			}
+			// $this->redis->set($this->PREFIX . $userId, json_encode($userInfo));
+			$this->redis->hSet($this->USER_HASH, $this->PREFIX . $userId, json_encode($userInfo));
+		}
+
+		// 3. update login rank memcache
+		if ($updateInfo['LOGINTIMES']) {
+			$this->redis->zAdd($this->LOGIN_RANK, intval($updateInfo['LOGINTIMES']), $userId);
+		}
+
+		// 2. update mysql async
+		$this->redis->publish('userinfo_chan', json_encode($updateInfo));
+	}
+
+	// public function updateYesterdayRank() {
+	// 	$dateInfo = intval(date('w'))-1;
+	// 	$this->redis->delete($this->YESTERDAY_SCORE_RANK);
+	// 	$rows = $this->db->selectUserRankByDate($dateInfo);
+	// 	if ($rows) {
+	// 		foreach ($rows as $row) {
+	// 			$this->redis->zAdd($this->YESTERDAY_SCORE_RANK, intval($row['RANK'.$dateInfo]), $row['USERID']);
+	// 		}
+	// 	}
+	// }
+
+	public function getUserInfo($userId) {
+		// $userInfoStr = $this->redis->get($this->PREFIX . $userId);
+		$userInfoStr = $this->redis->hGet($this->USER_HASH, $this->PREFIX . $userId);
+		if ($userInfoStr) {
+			return json_decode($userInfoStr, true);
+		} else {
+			$row = $this->db->selectUser(array('USERID' => $userId));
+			if ($row) {
+				// $this->redis->set($this->PREFIX . $userId, json_encode($row));
+				$this->redis->hSet($this->USER_HASH, $this->PREFIX . $userId, json_encode($row));
+				$this->redis->sAdd($this->NAMELIST, $row['NAME']);
+				$this->redis->zAdd($this->SCORE_RANK, intval($row['SCORE']), $userId);
+				$this->redis->zAdd($this->MAX_SCORE_RANK, intval($row['MAXSCORE']), $userId);
+			}
+			return $row;
+		}
+	}
+
+	public function getScoreRank($userId) {
+		$rankList = array();
+		$userList = $this->redis->zRevRange($this->SCORE_RANK, 0, 100, true);
+		foreach ($userList as $key => $value) {
+			$userInfo = $this->getUserInfo($key);
+			$rankNum = $this->redis->zRevRank($this->SCORE_RANK, $key) + 1;
+			$rankInfo = array(
+				"uid" => $userInfo['USERID'],
+				"name" => $userInfo['NAME'],
+				"icon" => strval($userInfo['ICON']),
+				"score" => intval($userInfo['SCORE']),
+				"rank" => $rankNum
+			);
+			array_push($rankList, $rankInfo);
+		}
+		if (!isset($userList[$userId])) {
+			$userInfo = $this->getUserInfo($userId);
+			$rankNum = $this->redis->zRevRank($this->SCORE_RANK, $userId) + 1;
+			$rankInfo = array(
+				"uid" => $userInfo['USERID'],
+				"name" => $userInfo['NAME'],
+				"icon" => strval($userInfo['ICON']),
+				"score" => intval($userInfo['SCORE']),
+				"rank" => $rankNum
+			);
+			array_push($rankList, $rankInfo);
+		}
+
+		return $rankList;
+	}
+
+	public function getSelfScoreRank($userId) {
+
+		$userInfo = $this->getUserInfo($userId);
+		$rankNum = $this->redis->zRevRank($this->SCORE_RANK, $userId) + 1;
+		$rankInfo = array(
+			"uid" => $userInfo['USERID'],
+			"name" => $userInfo['NAME'],
+			"icon" => strval($userInfo['ICON']),
+			"score" => intval($userInfo['SCORE']),
+			"rank" => $rankNum
+		);
+		return $rankInfo;
+	}
+
+	public function getLoginRank($userId) {
+		$rankList = array();
+		$userList = $this->redis->zRevRange($this->LOGIN_RANK, 0, 100, true);
+		foreach ($userList as $key => $value) {
+			$userInfo = $this->getUserInfo($key);
+			$rankInfo = array("name" => $userInfo['NAME'], "time" => intval($value));
+			array_push($rankList, $rankInfo);
+		}
+		if (!isset($userList[$userId])) {
+			$userInfo = $this->getUserInfo($userId);
+			$rankInfo = array("name" => $userInfo['NAME'], "time" => intval($value));
+			array_push($rankList, $rankInfo);
+		}
+		return $rankList;
+	}
+
+	public function getLastRank($userId, $day) {
+		$row = $this->db->selectUserRank($userId, $day);
+		$rankJson = $row['RANK'.$day];
+		return json_decode($rankJson, true);
+	}
+
+	public function getReward($userId) {
+
+		$userInfo = $this->getUserInfo($userId);
+		$day = intval(date("w"));
+		$lastDay = $userInfo['LASTLOGINDAY'];
+		if ($day != $lastDay) {
+			$updateInfo = array("USERID" => $userId, 'LASTLOGINDAY' => $day);
+			$this->updateUserInfo($updateInfo);
+			$rankInfo = $this->getLastRank($userId, $lastDay);
+			foreach ($rankInfo as $value) {
+				if ($value['uid'] == $userId) {
+					$rank = $value['rank'];
+					$reward = $this->getRewardInfo($rank);
+					return $reward;
+				}
+			}
+		}
+		return null;
+	}
+
+	public function getRewardInfo($rank) {
+
+		require_once('rewardconfig.php');
+		foreach ($ramboatDailyRewardConfig as $key => $value) {
+			if ($rank >= $value['start'] && $rank <= $value['end']) {
+				$reward = array ();
+				$reward['item'] = $value['reward'];
+				$reward['count'] = $value['count'];
+				$reward['rank'] = $rank;
+				return $reward;
+			}
+		}
+		return null;
+	}
+
+	public function backupScoreRank($userId) {
+		$scoreRank = $this->getScoreRank($userId);
+		$thisDayRank = json_encode($scoreRank);
+		$day = intval(date("w"));
+		$rankName = "RANK".$day;
+		$updateInfo = array("USERID" => $userId, $rankName => $thisDayRank);
+		$this->db->updateUser($updateInfo);
+	}
+
+	public function clearTodayRank() {
+
+		$this->redis->flushAll();
+		$updateInfo = array('SCORE' => 0);
+		return $this->db->updateAllUser($updateInfo);
+	}
+
+	public function clearWeekRank() {
+
+		$updateInfo = array();
+		for ($i=2; $i<=7; $i++) {
+			$updateInfo['RANK'.$i] = '';
+		}
+		return $this->db->updateAllUser($updateInfo);
+	}
+
+	public function getAllUserId () {
+		// $rows = $this->db->selectAllUser();
+		// $result = array ();
+		// foreach ($rows as $value) {
+		// 	array_push($result, $value['USERID']);
+		// 	// $this->getUserInfo($value['USERID']);
+		// }
+		// return $result;
+		return $this->redis->hKeys($this->USER_HASH);
+	}
+}
+
+?>
+
+
+
